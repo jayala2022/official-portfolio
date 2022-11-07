@@ -117,6 +117,29 @@ p {
   padding: 120px 60px;
 }
 
+.contact-page {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+.social-links a {
+  margin: 0 20px;
+  color: #555273;
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   .hero h1 {
     font-size: 44px;
