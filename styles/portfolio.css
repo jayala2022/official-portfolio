@@ -20,8 +20,18 @@ h6 {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
+
 h2 {
   font-size: 64px;
+}
+
+
+h3 {
+  font-size: 48px;
 }
 
 p {
@@ -29,16 +39,15 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
-
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 
 .hero h1 {
   color: black;
-  font-family: var(--default-font-family);
+  font-family--heading-font-family);
   font-weight: normal;
   line-height: 1.5;
   font-size: 60px;
@@ -52,7 +61,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content h1 {
@@ -62,7 +71,7 @@ p {
 
 .content h2 {
   font-size: 18px;
-  font-family: var(--default-font-family);
+  font-family--heading-font-family);
 }
 
 .content h3 {
@@ -199,16 +208,25 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
   .hero h1 {
     font-size: 44px;
     line-height: 2;
   }
   .hero h2 {
     font-size: 25px;
-  }
-
-  .hero {
-    padding: 80px 20px;
   }
 
   .content {
