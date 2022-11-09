@@ -1,6 +1,5 @@
 :root {
-  
-  --portfolio-color:#D2D0CF;
+  --portfolio-color:#171717;
   --branding-color: #4b5668;
   --secondary-color: #e0cfc2;
   --heading-font-family: "Playfair Display", serif;
@@ -56,21 +55,30 @@ p {
   background: var(--portfolio-color);
   text-align: center;
   padding: 80px 20px;
+  margin: 1px 10px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  color: black;
-  font-family--heading-font-family);
-  font-weight: normal;
-  line-height: 1.5;
-  font-size: 60px;
+  color: white;
+  font-family:var(--heading-font-family);
+  font-size: 40px;
+  margin: 0px 0px 10px 320px;
 }
 
 .hero h2 {
+  color: white;
+  font-family: var(--heading-font-family);
+  font-size: 65px;
+  margin: 15px 0px 0px 470px;
+}
+
+.hero h3 {
+  color: white;
   font-family: var(--heading-font-family);
   font-weight: normal;
-  line-height: 1.5;
-  font-size: 65px;
+  font-size: 22px;
+  margin: 15px 400px 0px 0px;
 }
 
 .content-container {
