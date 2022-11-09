@@ -1,5 +1,7 @@
 :root {
   --portfolio-color:#171717;
+  /*DELETEorCHANGE 
+  --branding-color:#4b5668*/
   --branding-color: #4b5668;
   --secondary-color: #e0cfc2;
   --heading-font-family: "Playfair Display", serif;
@@ -127,12 +129,16 @@ h3 {
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  cursor: crosshair;
 }
 
 .project-image {
@@ -199,13 +205,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #555273;
+  color: var(--portfolio-color);
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 footer {
@@ -238,7 +244,8 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: white;
-  background: var(--branding-color);
+  cursor: crosshair;
+  background: var(--secondary-color);  
 }
 
 .author p, a {
@@ -319,7 +326,7 @@ footer .social-links a:hover {
     font-size: 12px;
   }
 
-  .author p {
+  .author p, a {
     font-size: 10px;
   }
 }
