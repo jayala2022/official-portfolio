@@ -1,12 +1,15 @@
 :root {
+  
+  --portfolio-color:#D2D0CF;
   --branding-color: #4b5668;
   --secondary-color: #e0cfc2;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
-body {
+body,html {
   font-family: var(--default-font-family);
+  background-color: var(--portfolio-color);
 }
 
 h1,
@@ -39,8 +42,18 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
+
+.portfolio-content {
+    padding: 10px 280px;
+  }
+  
+  .portfolio-body {
+    background-color: #fff;
+    box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
+}
+
 .hero {
-  background: var(--secondary-color);
+  background: var(--portfolio-color);
   text-align: center;
   padding: 80px 20px;
 }
@@ -128,8 +141,8 @@ p {
 
 .social-links a {
   margin: 0 20px;
-  color: #555273;
-  background: var(--secondary-color);
+  color: var(--portfolio-color);
+  background: #555273;
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 20px;
@@ -181,7 +194,7 @@ footer {
 
 footer .contact-box,
 .contact-page {
-  background: var(--secondary-color);
+  background: var(--portfolio-color);
   padding: 30px 120px;
   border-radius: 10px;
 }
