@@ -36,19 +36,21 @@ h3 {
   font-size: 48px;
 }
 
-p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-}
-
 .portfolio-content {
-    padding: 10px 280px;
+  padding: 10px 10px;
   }
   
-  .portfolio-body {
-    background-color: #fff;
-    box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
+ .portfolio-body {
+   background-color: #fff;
+   box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
+   padding: 1px 20px 3px 15px;
+  }
+  
+  .portfolio-body p {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 30px;
+  color: var(--portfolio-color);
 }
 
 .hero {
@@ -78,11 +80,11 @@ p {
   font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 22px;
-  margin: 15px 400px 0px 0px;
+  margin: 15px 180px 0px 0px;
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 15px 0px;
 }
 
 .content h1 {
@@ -111,9 +113,9 @@ p {
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: var(--secondary-color);
   border-radius: 4px;
-  color: #f6cca3;
+  color: var(--portfolio-color);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -121,6 +123,7 @@ p {
 
 .btn-branding:hover {
   color: white;
+  cursor: crosshair;
 }
 
 .btn-branding-outline {
@@ -135,16 +138,25 @@ p {
 .project-image {
   border: 1px solid white;
   padding: 10px 40px;
-  box-shadow: 20px 10px #4b5668;
+  box-shadow: 15px 17px 20px var(--secondary-color);
   border-radius: 5px;
+  filter: grayscale(100%);
 }
 
 .project-image:hover {
   cursor: crosshair;
+  filter: none;
 }
 
 .project-description {
   padding: 120px 60px;
+}
+
+.project-description p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--portfolio-color);
 }
 
 .social-links a {
@@ -207,13 +219,14 @@ footer .contact-box,
   border-radius: 10px;
 }
 
-footer .contact-box p {
+footer .contact-box h3, p {
   margin: 0;
+  color: white;
 }
 
 footer .social-links a {
   margin: 0 20px;
-  color: #555273;
+  color: var(--portfolio-color);
   background: var(--secondary-color);
   padding: 10px 14px;
   border-radius: 50%;
@@ -226,6 +239,16 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+.author p, a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.author a {
+  cursor:crosshair;
 }
 
 @media (max-width: 900px) {
@@ -242,17 +265,45 @@ footer .social-links a:hover {
     font-size: 26px;
   }
 
+  .portfolio-content {
+  font-size: 44px;
+  }
+  
+ .portfolio-body {
+  font-size: 25px;
+}
+
+.portfolio-body p {
+  font-size: 20px;
+}
+
+.project-description p {
+ font-size: 12px;
+}
+
   .hero h1 {
-    font-size: 44px;
+    font-size: 18px;
     line-height: 2;
+    margin: 10px;
   }
   .hero h2 {
     font-size: 25px;
+   margin: 1px -60px 0px 0px;
+  }
+
+  .hero h3 {
+    font-size: 10px;
+    margin: 1px 30px 3px 13px;
   }
 
   .content {
     text-align: center;
     padding: 0;
+  }
+
+  .btn-branding {
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
   }
 
   .project-description {
@@ -266,5 +317,9 @@ footer .social-links a:hover {
 
   nav a {
     font-size: 12px;
+  }
+
+  .author p {
+    font-size: 10px;
   }
 }
