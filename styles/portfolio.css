@@ -1,5 +1,5 @@
 :root {
-  --portfolio-color:#171717;
+  --portfolio-color: #171717;
   /*DELETEorCHANGE 
   --branding-color:#4b5668*/
   --branding-color: #4b5668;
@@ -8,7 +8,8 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
-body,html {
+body,
+html {
   font-family: var(--default-font-family);
   background-color: var(--portfolio-color);
 }
@@ -32,25 +33,24 @@ h2 {
   font-size: 64px;
 }
 
-
 h3 {
   font-size: 48px;
 }
 
 .portfolio-content {
   padding: 10px 10px;
-  }
-  
- .portfolio-body {
-   background-color: #fff;
-   box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
-   padding: 1px 20px 3px 15px;
-  }
-  
-  .portfolio-body p {
+}
+
+.portfolio-body {
+  background-color: #fff;
+  box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
+  padding: 1px 20px 3px 15px;
+}
+
+.portfolio-body p {
   font-weight: normal;
   font-size: 45px;
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   line-height: 30px;
   color: var(--portfolio-color);
   text-shadow: 5px 5px 6px rgb(23 23 23 / 20%);
@@ -93,13 +93,15 @@ h3 {
 }
 
 .content h1 {
-  font-size: 64px;
+  font-size: 60px;
+  font-family: var(--default-font-family);
   line-height: 80px;
+  text-shadow: 5px 5px rgb(224 207 194 / 50%);
 }
 
 .content h2 {
   font-size: 18px;
-  font-family--heading-font-family);
+  font-family: var(--heading-font-family);
 }
 
 .content h3 {
@@ -115,6 +117,34 @@ h3 {
 
 .content {
   margin: 30px;
+}
+
+.certification-image {
+  padding: 10px 45px;
+  border-radius: 10px;
+  filter: grayscale(90%);
+  display: block;
+  height: auto;
+}
+
+.certification-image:hover {
+  box-shadow: 1px 10px 20px var(--secondary-color);
+  cursor: crosshair;
+  filter: none;
+  transition: 0.5s ease;
+}
+
+.tools-section-container {
+  padding: 1px 50px 11px 50px;
+}
+.tools-image {
+  margin-bottom: 5px;
+}
+
+.tools-image p {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 30px 0 0;
 }
 
 .btn-branding {
@@ -149,7 +179,7 @@ h3 {
   padding: 10px 40px;
   box-shadow: 15px 17px 20px var(--secondary-color);
   border-radius: 5px;
-  filter: grayscale(100%);
+  filter: grayscale(85%);
 }
 
 .project-image:hover {
@@ -229,7 +259,8 @@ footer .contact-box,
   border-radius: 10px;
 }
 
-footer .contact-box h3, h4 {
+footer .contact-box h3,
+h4 {
   margin: 0;
   color: var(--secondary-color);
   font-family: var(--default-font-family);
@@ -251,10 +282,11 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   cursor: crosshair;
-  background: var(--secondary-color);  
+  background: var(--secondary-color);
 }
 
-.author p, a {
+.author p,
+a {
   color: black;
   text-decoration: none;
   font-size: 18px;
@@ -263,7 +295,7 @@ footer .social-links a:hover {
 }
 
 .author a:hover {
-  cursor:crosshair;
+  cursor: crosshair;
   color: var(--secondary-color);
 }
 
@@ -282,21 +314,20 @@ footer .social-links a:hover {
   }
 
   .portfolio-content {
-  font-size: 44px;
+    font-size: 44px;
   }
-  
- .portfolio-body {
-  font-size: 25px;
-}
 
-.portfolio-body p {
-  font-size: 20px;
-}
+  .portfolio-body {
+    font-size: 25px;
+  }
 
-.project-description p {
- font-size: 12px;
-}
+  .portfolio-body p {
+    font-size: 20px;
+  }
 
+  .project-description p {
+    font-size: 12px;
+  }
 
   .hero h1 {
     font-size: 18px;
@@ -305,7 +336,7 @@ footer .social-links a:hover {
   }
   .hero h2 {
     font-size: 25px;
-   margin: 1px -60px 0px 0px;
+    margin: 1px -60px 0px 0px;
   }
 
   .hero h3 {
@@ -336,7 +367,8 @@ footer .social-links a:hover {
     font-size: 12px;
   }
 
-  .author p, a {
+  .author p,
+  a {
     font-size: 10px;
   }
 }
