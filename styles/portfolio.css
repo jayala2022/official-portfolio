@@ -1,7 +1,5 @@
 :root {
   --portfolio-color: #171717;
-  /*DELETEorCHANGE 
-  --branding-color:#4b5668*/
   --branding-color: #4b5668;
   --secondary-color: #e0cfc2;
   --heading-font-family: "Playfair Display", serif;
@@ -137,6 +135,7 @@ h3 {
 .tools-section-container {
   padding: 1px 50px 11px 50px;
 }
+
 .tools-image {
   margin-bottom: 5px;
 }
