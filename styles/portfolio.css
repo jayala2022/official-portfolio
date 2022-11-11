@@ -314,8 +314,8 @@ footer .author a:hover {
 .work-description h2,
 a {
   font-size: 25px;
-  line-height: 1.5;
-  margin: 0px -13px 10px -10px;
+  line-height: 1;
+  margin: 0px -15px 0px 1px;
   text-decoration: underline;
 }
 
@@ -326,8 +326,8 @@ a {
 
 .work-description p {
   font-size: 12px;
-  line-height: 1.5;
-  margin: 2px 15px 5px 15px;
+  line-height: 1;
+  margin: 2px -40px 5px -50px;
 }
 
 .work-description img {
@@ -463,7 +463,7 @@ a {
   }
 
   .work-description img {
-    display: flex;
+    display: block;
     filter: none;
     height: auto;
     padding: 0px 45px 20px 60px;
