@@ -247,11 +247,11 @@ footer .author-contact a:hover {
   background: var(--portfolio-color);
   color: var(--secondary-color);
   font-family: var(--default-font-family);
-  margin: 1px 10px;
   padding: 80px 20px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: underline;
+  text-shadow: 5px 5px rgb(224 207 194 / 50%);
+  text-transform: uppercase;
 }
 
 .hero-work h2 {
@@ -263,15 +263,16 @@ footer .author-contact a:hover {
   background: var(--portfolio-color);
   color: var(--secondary-color);
   font-family: var(--default-font-family);
+  font-size: 55px;
   margin: 1px 10px;
-  padding: 80px 20px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: underline;
+  text-shadow: 5px 5px rgb(224 207 194 / 50%);
+  text-transform: uppercase;
+  padding: 70px 5px 90px 5px;
 }
 
 .hero-contact h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: var(--default-font-family);
   font-weight: normal;
   padding: 33px 20px;
@@ -284,6 +285,7 @@ footer .author-contact a:hover {
 .portfolio-content {
   padding: 10px 10px;
 }
+
 .portfolio-body {
   background-color: #fff;
   box-shadow: 0px 0px 32px 17px rgba(170, 160, 156, 0.2);
