@@ -49,7 +49,7 @@ nav li {
   font-family: var(--default-font-family);
   list-style: none;
   line-height: 42px;
-  margin-left: 15px;
+  padding: 0px 25px 0px 15px;
 }
 
 nav a {
@@ -214,6 +214,20 @@ footer .author a:hover {
   margin: 15px 180px 0px 0px;
 }
 
+.hero-work h1 {
+  background: var(--portfolio-color);
+  color: var(--secondary-color);
+  font-family: var(--heading-font-family);
+  margin: 1px 10px;
+  padding: 80px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-work h2 {
+  font-size: 30px;
+}
+
 .logo {
   max-height: 80px;
 }
@@ -297,6 +311,40 @@ footer .author a:hover {
   padding: 0 30px 0 0;
 }
 
+.work-description h2,
+a {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 0px -13px 10px -10px;
+  text-decoration: underline;
+}
+
+.work-description a:hover {
+  color: var(--secondary-color);
+  cursor: crosshair;
+}
+
+.work-description p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 2px 15px 5px 15px;
+}
+
+.work-description img {
+  display: flex;
+  filter: grayscale(100%);
+  height: auto;
+  padding: 30px 0px 50px 0px;
+  margin: 1px 85px 3px -1px;
+}
+
+.work-description img:hover {
+  cursor: crosshair;
+  filter: none;
+  transition: 0.5s ease;
+  transform: scale(0.5);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -315,8 +363,19 @@ footer .author a:hover {
     font-size: 12px;
   }
 
-  footer .author p,
-  a {
+  nav li {
+    display: inline;
+    font-family: var(--default-font-family);
+    list-style: none;
+    line-height: 25px;
+    padding: 0px 20px 0px 8px;
+  }
+
+  footer .author p {
+    font-size: 7px;
+  }
+
+  footer .author a {
     font-size: 7px;
   }
 
@@ -394,5 +453,27 @@ footer .author a:hover {
   .title p {
     text-decoration: underline;
     font-size: 15px;
+  }
+
+  .work-description h2,
+  a {
+    font-size: 15px;
+    margin: 0px -13px 10px -10px;
+    text-decoration: underline;
+  }
+
+  .work-description img {
+    display: flex;
+    filter: none;
+    height: auto;
+    padding: 0px 45px 20px 60px;
+    margin: 0px 60px 0px 0px;
+  }
+
+  .work-description img:hover {
+    cursor: crosshair;
+    filter: none;
+    transition: none;
+    transform: none;
   }
 }
