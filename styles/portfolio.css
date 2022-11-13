@@ -445,7 +445,7 @@ footer .author-contact a:hover {
   }
 
   .portfolio-body h2 {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .portfolio-body p {
@@ -457,13 +457,20 @@ footer .author-contact a:hover {
     font-size: 44px;
   }
 
-  .project-description p {
+  .project-description {
+    text-align: center;
+  }
+
+  .project-description h2 {
+    font-size: 15px;
+  }
+
+  .project-description h4 {
     font-size: 12px;
   }
 
-  .project-description {
-    padding: 0;
-    text-align: center;
+  .project-description p {
+    font-size: 12px;
   }
 
   .title p {
